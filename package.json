@@ -1,0 +1,37 @@
+{
+  "name": "cmgraph",
+  "version": "0.0.1",
+  "description": "A tool for managing graph data as flat files.",
+  "main": "dist/index.js",
+  "repository": "https://github.com/SethCurry/cmgraph",
+  "author": "Seth Curry <seth@scurry.io>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@types/js-yaml": "^3.12.2",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "@oclif/command": "^1.5.19",
+    "@types/pino": "^5.15.5",
+    "js-yaml": "^3.13.1",
+    "pino": "^5.16.0"
+  },
+  "files": [
+    "/bin",
+    "/dist",
+    "npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "oclif": {
+    "commands": "./dist/commands",
+    "bin": "cmgraph",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}
