@@ -1,7 +1,7 @@
-import { Command, flags } from '@oclif/command'
+import { flags } from '@oclif/command'
 import BaseCommand from '../BaseCommand'
 
-export default class Compile extends BaseCommand {
+export default class RDFCommand extends BaseCommand {
     static description = 'describe the command here'
 
     static examples = [
@@ -17,6 +17,6 @@ export default class Compile extends BaseCommand {
     ]
 
     async run() {
-        this.logger.info("starting compilation")
+        this.logger.info("starting compilation to rdf")
     }
 }
